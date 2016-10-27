@@ -15,5 +15,11 @@ echo "User home dir: $HOMEDIR"
 echo "User Shadow path: $SHADOWPATH"
 echo "vmname: $VMNAME"
 
+sudo su $2
+sudo apt-get update
+sudo apt-get -y install libboost-all-dev
+touch ~/bah
+
+
 echo "completed install $$"
 exit 0
